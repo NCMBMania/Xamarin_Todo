@@ -17,7 +17,7 @@ namespace Todo
                .Set("name", Name)
                .Set("notes", Notes)
                .Set("done", Done);
-            if (ObjectId != "")
+            if (!(ObjectId is null))
             {
                 obj.Set("objectId", ObjectId);
             }
